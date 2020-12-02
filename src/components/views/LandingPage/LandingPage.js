@@ -6,7 +6,7 @@ function LandingPage() {
         <>
             <div className="app">
                 <FaWineGlassAlt style={{ fontSize: '4rem' }} /><br />
-                <span style={{ fontSize: '2rem' }}>:: Winer ::</span>
+                <span style={{ fontSize: '2rem' }}>::: Winer :::</span>
             </div>
         </>
     )
