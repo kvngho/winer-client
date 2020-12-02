@@ -26,6 +26,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "homepage" : "https://main--youthful-saha-553192.netlify.app",
   "eslintConfig": {
     "extends": "react-app"
   },
