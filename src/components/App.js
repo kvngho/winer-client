@@ -12,6 +12,7 @@ import Wine1 from './views/Wine1/Wine1';
 import Wine2 from './views/Wine2/Wine2';
 import Wine3 from './views/Wine3/Wine3';
 import Wine4 from './views/Wine4/Wine4';
+import Map1 from './views/Map1/Map1';
 
 //null   Anyone Can go inside
 //true   only logged in user can go inside
@@ -27,6 +28,7 @@ function App() {
           <Route exact path="/login" component={Auth(LoginPage, false)} />
           <Route exact path="/register" component={Auth(RegisterPage, false)} />
           <Route exact path="/survey" component={Auth(SurveyPage, null)} />
+          <Route exact path="/map" component={Auth(Map1, null)} />
           <Route exact path="/wine1" component={Auth(Wine1, null)} />
           <Route exact path="/wine2" component={Auth(Wine2, null)} />
           <Route exact path="/wine3" component={Auth(Wine3, null)} />
