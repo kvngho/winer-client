@@ -5,8 +5,13 @@ import Auth from "../hoc/auth";
 import LandingPage from "./views/LandingPage/LandingPage.js";
 import LoginPage from "./views/LoginPage/LoginPage.js";
 import RegisterPage from "./views/RegisterPage/RegisterPage.js";
+import SurveyPage from "./views/SurveyPage/SurveyPage.js"
 import NavBar from "./views/NavBar/NavBar";
 import Footer from "./views/Footer/Footer"
+import Wine1 from './views/Wine1/Wine1';
+import Wine2 from './views/Wine2/Wine2';
+import Wine3 from './views/Wine3/Wine3';
+import Wine4 from './views/Wine4/Wine4';
 
 //null   Anyone Can go inside
 //true   only logged in user can go inside
@@ -21,6 +26,11 @@ function App() {
           <Route exact path="/" component={Auth(LandingPage, null)} />
           <Route exact path="/login" component={Auth(LoginPage, false)} />
           <Route exact path="/register" component={Auth(RegisterPage, false)} />
+          <Route exact path="/survey" component={Auth(SurveyPage, null)} />
+          <Route exact path="/wine1" component={Auth(Wine1, null)} />
+          <Route exact path="/wine2" component={Auth(Wine2, null)} />
+          <Route exact path="/wine3" component={Auth(Wine3, null)} />
+          <Route exact path="/wine4" component={Auth(Wine4, null)} />
         </Switch>
       </div>
       <Footer />
